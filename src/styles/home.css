@@ -1,0 +1,25 @@
+.homeContaner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.homeContaner h1{
+    margin: 8px;
+    font-size: 2.3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.homeContaner p{
+    margin: 7px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+

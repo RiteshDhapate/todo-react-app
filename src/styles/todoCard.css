@@ -1,0 +1,32 @@
+.todoCardContaner{
+    width: 350px;
+    min-height: 250px;
+    border-radius: 10px;
+    margin:20px;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* border: 3px solid rgb(233, 213, 184); */
+   /* background: red; */
+   position: relative;
+}
+.todoCardContaner .dataANDcomplete,.updateANDdeleteBTN{
+    display: flex;
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+.updateANDdeleteBTN{
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+.todoCardContaner .titleANDmassage h3{
+    text-align: center;
+    margin:7px 0px ;
+    margin-top: 20px;
+}
+
+.todoCardContaner .titleANDmassage p{
+    text-align: justify;
+    margin:7px 0px ;
+    margin-bottom: 20px;
+}

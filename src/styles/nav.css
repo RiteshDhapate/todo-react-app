@@ -1,0 +1,141 @@
+
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    color: rgb(16, 15, 15);
+    height: 50px;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0px 20px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    gap: 4em;
+    list-style-type: none;
+}
+
+.menu ul li {
+    font-weight: 900;
+    font-family: Courier, monospace;
+    cursor: pointer;
+}
+
+.menu ul li .active {
+    color: #11e3df!important;
+}
+
+.menu ul li .link {
+    font-size: 1.2rem;
+    position: relative;
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+
+}
+
+.menu ul li .link::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 0%;
+    height: 3px;
+    left: 0px;
+    background-color: #11e3df;
+    -webkit-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+}
+
+.menu ul li .link:hover::after {
+    width: 100%;
+}
+
+.menuIcon {
+    font-size: 1.2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.nav .logo {
+    z-index: 999;
+}
+.nav .logo span{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.todoIcon{
+    font-size: 1.2rem;
+}
+
+/* media queary*/
+@media(max-width: 980px) {
+
+    .menuIcon {
+        display: block;
+        z-index: 999;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        /* background: -webkit-gradient(linear, right top, left bottom, from(rgb(147, 116, 133)), to(rgb(184, 185, 185))); */
+        background: -o-linear-gradient(right top, rgb(240, 204, 222), rgb(169, 176, 178));
+        background: linear-gradient(to left bottom, rgb(222, 217, 220),rgb(213, 227, 230));
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .menu ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .activeMenu {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+}
+
