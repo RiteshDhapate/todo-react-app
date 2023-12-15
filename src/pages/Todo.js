@@ -21,7 +21,7 @@ const Todo = () => {
       ; (
         async () => {
           try {
-            const res = await Axios.post("http://localhost:2000/addtodo", { title, massage, completed: false, userid: userdata.user._id });            
+            const res = await Axios.post("https://todo-node-server-ozyn0vd5m-riteshdhapates-projects.vercel.app/addtodo", { title, massage, completed: false, userid: userdata.user._id });            
             setTitle("");
             setMassage("");
             login.setIsLogedIn(true);
