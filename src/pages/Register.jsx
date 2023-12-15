@@ -16,7 +16,7 @@ const Register = () => {
        try {
         setMassage("")
         // login.setIsLogedIn(false);
-        const res=await Axios.post("https://todo-node-server-ozyn0vd5m-riteshdhapates-projects.vercel.app/adduser",{username,email,password});
+        const res=await Axios.post("https://todo-node-server-r3eeuwmo1-riteshdhapates-projects.vercel.app//adduser",{username,email,password});
         const firstIndexData=await res.data[0]
         console.log(res.data);
         if(res.data.length ===0){
