@@ -21,7 +21,7 @@ function comareAndsetData(){
      try {
       setMassage("")
       login.setIsLogedIn(false);
-      const res=await Axios.post("https://todo-node-server-ozyn0vd5m-riteshdhapates-projects.vercel.app/user",{email,password});
+      const res=await Axios.post("https://todo-node-server-r3eeuwmo1-riteshdhapates-projects.vercel.app/user",{email,password});
       const firstIndexData=await res.data[0]
       if(res.data.length ===0){
 
